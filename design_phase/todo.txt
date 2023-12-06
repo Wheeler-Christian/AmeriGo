@@ -1,0 +1,8 @@
+Todo list for this project
+Remember to commit all changes to the develop branch first!
+
+1. make a toggle for dark mode in the develop branch
+    a. an icon at the far right end of the navbar
+    b. a moon for dark mode
+    c. a sun for light mode
+2. Make the "add entities file"
