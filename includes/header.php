@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $page_title; ?></title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="css/sticky-footer-navbar.css" rel="stylesheet">
 </head>
 
@@ -17,7 +17,6 @@
             <div class="navbar-header"><a class="navbar-brand" href="#">Transit Ticket Buyer</a></div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <!-- TODO check which page should be active -->
 					<?php
                         // Always display the link to the home page:
                         echo '<li';
@@ -55,6 +54,15 @@
                             if($page_title == 'Logged In!') echo ' class="active"';
                             echo '><a href="logout.php">Logout</a></li>';
                             // ^^^^^ Always show the purchase history and logout links
+
+                            // Dark mode toggler
+                            // echo '<li><button type="button" onclick="toggle_dark()">'; 
+                            // if($_SESSION['dark_mode']) {
+                            //     echo 'DARK MODE';
+                            // } else {
+                            //     echo 'LIGHT MODE';
+                            // }
+                            // echo '</button></li>';
 
 						} else { // Else the customer is not logged in:
                             echo '<li'; 
