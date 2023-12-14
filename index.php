@@ -6,7 +6,7 @@
     $page_title = 'Home';
     include('includes/header.php');
 
-    echo '<div class="page-header"><h1>Welcome to Transit Ticket Buyer!</h1></div>
+    echo '<div class="page-header"><h1>Welcome to AmeriGo, the transit ticket buyer!</h1></div>
 
     <br>
     <h2>Ride Our Trains!</h2>
